@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import {
   BarChart,
@@ -518,8 +519,18 @@ const AudienceSegmentationDashboard: React.FC = () => {
               </div>
               
               <div className="overflow-x-auto">
+              <Link 
+    href="https://docs.google.com/spreadsheets/d/18wN_OtlbvMFZqEcAdPl-lZSKvbP4myJFfREv1KEMUlw/edit?usp=sharing" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:underline font-semibold mb-2 block"
+  >
+    View the list of <span className="font-bold">Potential Leads</span> who have shown interest.  
+    They may be inquiring for themselves, a friend, or a family member.
+  </Link>
                 <table className="min-w-full divide-y divide-gray-200 rounded-lg overflow-hidden">
                   <thead className="bg-gray-50">
+          
                     <tr>
                       <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Segment</th>
                       <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Reel %</th>
